@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <app-medallero></app-medallero>
+  <meta charset="utf-8">
+  <title>JJOO</title>
+  
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div class="medallero-container">
+    <h1>Medallero Olimpico</h1>
+  
+    <div class="pais" *ngFor="let pais of paises">
+      <div class="pais-info">
+        <span class="bandera">{{ pais.bandera }}</span>
+        <h2>{{ pais.nombre }}</h2>
+      </div>
+  
+      <div class="medallas">
+        <div class="medalla" *ngFor="let tipo of ['oro', 'plata', 'bronce']">
+          <span class="tipo">{{ tipo | uppercase }}:</span>
+          <span class="cantidad">{{ pais.medallas[tipo] }}</span>
+        </div>
+      </div>
+  
+      <div class="deportes">
+        <h3>Deportes:</h3>
+        <ul>
+          <li *ngFor="let deporte of pais.deportes">{{ deporte }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <app-root></app-root>
+</body>
+</html>

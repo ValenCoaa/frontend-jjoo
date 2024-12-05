@@ -16,7 +16,7 @@ table {
 }
 th, td {
     padding: 15px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #e0e0e0;
 }
 th {
@@ -144,7 +144,7 @@ main {
 }
 
 .olympic-btn {
-    background-color: #ffcc00;
+    background-color: #0059ff;
     border: none;
     padding: 15px 30px;
     font-size: 1.2em;

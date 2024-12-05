@@ -8,7 +8,7 @@ interface DetalleDeporte {
   medalla: 'oro' | 'plata' | 'bronce';
 }
 
-interface Deporte {
+interface deporte {
   nombre: string;
   oro: number;
   plata: number;
@@ -18,7 +18,7 @@ interface Deporte {
   detalles: DetalleDeporte[];
 }
 
-interface Pais {
+interface pais {
   orden: number;
   nombre: string;
   bandera: string;
@@ -26,7 +26,7 @@ interface Pais {
   plata: number;
   bronce: number;
   total: number;
-  deportes: Deporte[];
+  deportes: deporte[];
   mostrarDetalles: boolean;
 }
 
@@ -38,7 +38,7 @@ interface Pais {
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  paises: Pais[] = [
+  paises: pais[] = [
     {
       orden: 1,
       nombre: 'Estados Unidos',
@@ -65,11 +65,11 @@ export class AppComponent {
     // Puedes agregar más países aquí
   ];
 
-  toggleDetalles(pais: Pais) {
+  toggleDetalles(pais: pais) {
     pais.mostrarDetalles = !pais.mostrarDetalles;
   }
 
-  toggleDeporteDetalles(deporte: Deporte) {
+  toggleDeporteDetalles(deporte: deporte) {
     deporte.mostrarDetalles = !deporte.mostrarDetalles;
   }
 }

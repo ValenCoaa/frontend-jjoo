@@ -52,41 +52,43 @@
         </tr>
         <!-- Filas de deportes -->
         <ng-container *ngIf="pais.mostrarDetalles">
-          <tr *ngFor="let deporte of pais.deportes">
-            <td></td>
-            <td>{{deporte.nombre}}</td>
-            <td>{{deporte.oro}}</td>
-            <td>{{deporte.plata}}</td>
-            <td>{{deporte.bronce}}</td>
-            <td>{{deporte.total}}</td>
-            <td>
-              <button class="expandir-btn" (click)="toggleDeporteDetalles(deporte)">
-                {{deporte.mostrarDetalles ? '-' : '+'}}
-              </button>
-            </td>
-          </tr>
-          <tr *ngIf="deporte.mostrarDetalles" class="detalles-row">
-            <td colspan="7">
-              <div class="detalles-container">
-                <table class="detalles-tabla">
-                  <thead>
-                    <tr>
-                      <th>Evento</th>
-                      <th>Medallista</th>
-                      <th>Medalla</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr *ngFor="let detalle of deporte.detalles">
-                      <td>{{detalle.evento}}</td>
-                      <td>{{detalle.medallista}}</td>
-                      <td [class]="'medalla-' + detalle.medalla">{{detalle.medalla}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </td>
-          </tr>
+          <ng-container *ngFor="let deporte of pais.deportes">
+            <tr>
+              <td></td>
+              <td>{{deporte.nombre}}</td>
+              <td>{{deporte.oro}}</td>
+              <td>{{deporte.plata}}</td>
+              <td>{{deporte.bronce}}</td>
+              <td>{{deporte.total}}</td>
+              <td>
+                <button class="expandir-btn" (click)="toggleDeporteDetalles(deporte)">
+                  {{deporte.mostrarDetalles ? '-' : '+'}}
+                </button>
+              </td>
+            </tr>
+            <tr *ngIf="deporte.mostrarDetalles" class="detalles-row">
+              <td colspan="7">
+                <div class="detalles-container">
+                  <table class="detalles-tabla">
+                    <thead>
+                      <tr>
+                        <th>Evento</th>
+                        <th>Medallista</th>
+                        <th>Medalla</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let detalle of deporte.detalles">
+                        <td>{{detalle.evento}}</td>
+                        <td>{{detalle.medallista}}</td>
+                        <td [class]="'medalla-' + detalle.medalla">{{detalle.medalla}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </ng-container>
         </ng-container>
       </ng-container>
     </tbody>

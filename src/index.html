@@ -17,9 +17,9 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Medallas</a></li>
-                <li><a href="#">Medallistas</a></li>
-                <li><a href="#">Noticias</a></li>
+                <li><a href="#" class="olympic-btn">Medallas</a></li>
+                <li><a href="#" class="olympic-btn">Medallistas</a></li>
+                <li><a href="#" class="olympic-btn">Noticias</a></li>
             </ul>
         </nav>
     </header>
@@ -28,13 +28,20 @@
         <section class="buttons-section">
             <h2>Explora los Juegos Olímpicos</h2>
             <div class="button-container">
-                <button class="olympic-btn">Ver Medallas</button>
-                <button class="olympic-btn">Ver Medallistas</button>
-                <button class="olympic-btn">Noticias Recientes</button>
+                <a href="#" class="olympic-btn">Ver Medallas</a>
+                <a href="#" class="olympic-btn">Ver Medallistas</a>
+                <a href="#" class="olympic-btn">Ver Deportes</a>
             </div>
         </section>
     </main>
-    <table>
+<div>
+    <button id="react-aria8373042465-:r24j:" type="button" aria-label="noc" aria-labelledby="react-aria8373042465-:r24o: react-aria8373042465-:r24j:" aria-haspopup="listbox" aria-expanded="false" class="select-single-value__header select-single-value__header--collapsed  emotion-srm-25503f e16nce971" data-rac=""><span id="react-aria8373042465-:r24o:" class="emotion-srm-u62vru e16nce973" data-rac="">Todos los CONs</span><div aria-hidden="true" class="emotion-srm-ik1bi2 e16nce972" hidden=""><img src="https://gstatic.olympics.com/s1/t_original/static/srm/paris-2024/selectCollapse.svg" width="12" height="12" role="img" loading="lazy" class="emotion-srm-1uf2o2m eph8xjg0"></div><div aria-hidden="true" class="emotion-srm-ik1bi2 e16nce972"><img src="https://gstatic.olympics.com/s1/t_original/static/srm/paris-2024/selectExpand.svg" width="12" height="12" role="img" loading="lazy" class="emotion-srm-1uf2o2m eph8xjg0"></div></button>
+    <span id="react-aria8373042465-:r24o:" class="emotion-srm-u62vru e16nce973" data-rac="">Todos los CONs</span>
+    <img src="https://gstatic.olympics.com/s1/t_original/static/srm/paris-2024/selectCollapse.svg" width="12" height="12" role="img" loading="lazy" class="emotion-srm-1uf2o2m eph8xjg0">
+</div>
+
+
+    <table >
         <thead>
             <tr>
                 <th>Orden</th>
@@ -56,7 +63,7 @@
             <tr>
                 <td>1</td>
                 <td>
-                    <img src="ruta-bandera" alt="bandera" width="24">
+                    <img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/USA.png" width="32" height="22" loading="lazy" alt="bandera de Estados Unidos" title="bandera de Estados Unidos" class="elhe7kv3 emotion-srm-1fosvfu eph8xjg0">
                     Estados Unidos
                 </td>
                 <td>40</td>
@@ -70,7 +77,43 @@
             <!-- Más filas aquí -->
         </tbody>
     </table>
-    
 
+    <table>
+        <thead>
+            <tr>
+                <th>Orden</th>
+                <th>Competidor</th>
+                <th>
+                    <span class="medalla-oro">O</span>
+                </th>
+                <th>
+                    <span class="medalla-plata">P</span>
+                </th>
+                <th>
+                    <span class="medalla-bronce">B</span>
+                </th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/USA.png" width="32" height="22" loading="lazy" alt="bandera de Estados Unidos" title="bandera de Estados Unidos" class="elhe7kv3 emotion-srm-1fosvfu eph8xjg0">
+                    Estados Unidos
+                </td>
+                <td>40</td>
+                <td>44</td>
+                <td>42</td>
+                <td>126</td>
+                <td>
+                    <button class="expandir-btn">+</button>
+                </td>
+            </tr>
+            <!-- Más filas aquí -->
+        </tbody>
+    </table>
+    <app-root></app-root> <!-- Aquí se inyecta el componente raíz de Angular -->
 </body>
 </html>

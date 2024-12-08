@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJOO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>PARIS 2024</h1>
+        <div class="paris-2024">
+            <a data-tracking-payload="{&quot;module&quot;:&quot;Header&quot;,&quot;link_tag&quot;:&quot;Paris 2024&quot;,&quot;module_instance&quot;:&quot;P2024 - Top menu&quot;,&quot;destination_url&quot;:&quot;https://olympics.com/es/paris-2024/juegos-olimpicos&quot;}"class="sc-8bc408a4-4 lalXpS">
+                <img src="https://gstatic.olympics.com/s1/f_auto/static/srm/paris-2024/topic-assets/paris-2024/emblem-oly.svg" alt="Juegos Olímpicos de París 2024" loading="lazy" class="paris-2024">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="olympic-btn">Inicio</a></li>
+                <li><a href="#" class="olympic-btn">Medallas</a></li>
+                <li><a href="#" class="olympic-btn">Medallistas</a></li>
+                <li><a href="https://olympics.com/es/paris-2024/noticias" class="olympic-btn">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="buttons-section">
+            <h2>Explora los Juegos Olímpicos</h2>
+            <div class="button-container">
+                <a href="#" class="olympic-btn">Ver Medallas</a>
+                <a href="#" class="olympic-btn">Ver Medallistas</a>
+                <a href="#" class="olympic-btn">Ver Deportes</a>
+            </div>
+        </section>
+    </main>
+<div>
+    <form action="http://127.0.0.1:8000/api/pais" method="post">
+        <input type="text" id="deportistas">Deportistas
+        <br>
+        <input type="submit" id="enviar">Enviar
+    </form>
+    <script src="script.js"></script>
+    
+</div>
+
+
+    <table >
+        <thead Pais>
+            <tr>
+                <th>Orden</th>
+                <th>País</th>
+                <th><span class="medalla-oro">O</span></th>
+                <th><span class="medalla-plata">P</span></th>
+                <th><span class="medalla-bronce">B</span></th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/USA.png" width="32" height="22" loading="lazy" alt="bandera de Estados Unidos" title="bandera de Estados Unidos" class="elhe7kv3 emotion-srm-1fosvfu eph8xjg0">
+                    Estados Unidos
+                </td>
+                <td>40</td>
+                <td>44</td>
+                <td>42</td>
+                <td>126</td>
+                <td>
+                    <button class="expandir-btn">+</button>
+                </td>
+                <app-root></app-root>
+            </tr>
+            <!-- Más filas aquí -->
+        </tbody>
+    </table>
+
+    <app-root></app-root> <!-- Aquí se inyecta el componente raíz de Angular -->
+</body>
+</html>
+

@@ -1,0 +1,217 @@
+/* Estilo general para la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+}
+/* Estilo para las columnas de medallas */
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6) {
+    text-align: center;
+    font-weight: bold;
+}
+/* Estilo para la columna de país */
+td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* Estilo para los números de posición */
+td:first-child {
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+/* Estilos para las medallas */
+.medalla-oro {
+    color: #FFD700;
+}
+.medalla-plata {
+    color: #C0C0C0;
+}
+.medalla-bronce {
+    color: #CD7F32;
+}
+/* Hover effect en las filas */
+tr:hover {
+    background-color: #f5f5f5;
+}
+/* Estilo para el total */
+td:last-child {
+    font-weight: bold;
+    text-align: center;
+}
+/* Botón de expandir */
+.expandir-btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.expandir-btn:hover {
+    background-color: #f0f0f0;
+}
+
+tr td:first-child {
+    padding-left: 20px;
+}
+
+tr[data-deporte] td:first-child {
+    padding-left: 40px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #005baa;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.buttons-section {
+    margin-top: 30px;
+}
+
+.buttons-section h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.olympic-btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.olympic-btn:hover {
+    background-color: #ff9900;
+    transform: translateY(-5px);
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.detalles-tabla {
+  width: 100%;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 10px;
+}
+
+.detalles-tabla td {
+  padding: 8px;
+  border: none;
+}
+
+.detalles-container {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin: 10px 20px;
+}
+
+.detalles-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.detalles-tabla th,
+.detalles-tabla td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detalles-tabla th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.medalla-oro { color: #FFD700; }
+.medalla-plata { color: #C0C0C0; }
+.medalla-bronce { color: #CD7F32; }
+
+.detalles-row {
+  background-color: #f8f9fa;
+}
